@@ -13,14 +13,8 @@ int main() {
     float PlayerPosY = 300.0f;
     float PlayerVelocity = 20.0f;
 
-    Vector2 PlayerPosition = {
-        (float)PlayerPosX, 
-        (float)PlayerPosY
-    };
-    Vector2 PlayerSize = {
-        (float)PlayerSizeX,
-        (float)PlayerSizeY
-    };
+    Vector2 PlayerPosition = {(float)PlayerPosX,(float)PlayerPosY};
+    Vector2 PlayerSize = {(float)PlayerSizeX,(float)PlayerSizeY};
     
     InitWindow(ScreenWidth, screenheight, "Snake Game");
     SetTargetFPS(framerate);
