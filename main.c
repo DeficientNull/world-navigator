@@ -35,27 +35,24 @@ int main() {
         //snake drawing stuff
         DrawRectangleV(PlayerPosition, PlayerSize, RED);
         
-        //move the player to a direction on game start
-        PlayerPosition.x += 20.0f;
-        
         //player input stuff
-        if (IsKeyPressed(KEY_W)) {
+        if (IsKeyDown(KEY_W)) {
             PlayerPosition.x == 0.0f;
             PlayerPosition.y -= 20.0f;
         }
-        if (IsKeyPressed(KEY_S)) {
+        if (IsKeyDown(KEY_S)) {
             PlayerPosition.x == 0.0f;
             PlayerPosition.y += 20.0f;
         }
-        if (IsKeyPressed(KEY_D)) {
+        if (IsKeyDown(KEY_D)) {
             PlayerPosition.x += 20.0f;
             PlayerPosition.y == 0.0f;
         }
-        if (IsKeyPressed(KEY_A)) {
+        if (IsKeyDown(KEY_A)) {
             PlayerPosition.x -= 20.0f;
             PlayerPosition.y == 0.0f;
         }
-
+        
         EndDrawing();
     }
     CloseWindow();
