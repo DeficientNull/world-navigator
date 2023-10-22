@@ -62,11 +62,15 @@ int main() {
             if (IsKeyDown(KEY_D)) {
                 PlayerVelocityX = 0.0f;
             }
+        } else {
+            PlayerVelocityX = 0.0f;
         }
         if (PlayerPosition.y == 380.0f) {
             if (IsKeyDown(KEY_S)) {
                 PlayerVelocityY = 0.0f;
             }
+        } else {
+            PlayerVelocityY = 0.0f;
         }
         //this is insane, i'll end up having to manually write every coordinate for every wall i need collision for
         //well it doesn't even work right so it doesn't matter
