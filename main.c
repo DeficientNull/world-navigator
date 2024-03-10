@@ -55,7 +55,7 @@ int main() {
         
         //Wall Drawing
         DrawRectangle(WallPositionX, WallPositionY, WallSizeX, WallSizeY, GRAY);
-        // i should remove this hardcoding later
+        
 
         //wall collision stuff
         if (PlayerPosition.x == 20.0f) {
@@ -77,6 +77,6 @@ int main() {
         EndDrawing();
     }
     CloseWindow();
-
+    
     return 0;
 }
