@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <raylib.h>
 #include <raymath.h>
+#include <resource_dir.h>
 
 int main() {
     const int ScreenWidth = 800;
@@ -37,20 +38,20 @@ int main() {
         
         //player input stuff
         if (IsKeyDown(KEY_W)) {
-            PlayerPosition.x == 0.0f;
+            PlayerPosition.x = 0.0f;
             PlayerPosition.y -= PlayerVelocityY;
         }
         if (IsKeyDown(KEY_S)) {
-            PlayerPosition.x == 0.0f;
+            PlayerPosition.x = 0.0f;
             PlayerPosition.y += PlayerVelocityY;
         }
         if (IsKeyDown(KEY_D)) {
             PlayerPosition.x += PlayerVelocityX;
-            PlayerPosition.y == 0.0f;
+            PlayerPosition.y = 0.0f;
         }
         if (IsKeyDown(KEY_A)) {
             PlayerPosition.x -= PlayerVelocityX;
-            PlayerPosition.y == 0.0f;
+            PlayerPosition.y = 0.0f;
         }
         
         //Wall Drawing
