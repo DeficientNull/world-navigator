@@ -4,7 +4,7 @@
 
 int main() {
     const int ScreenWidth = 800;
-    const int screenheight = 600;
+    const int Screenheight = 600;
     const int framerate = 14;
      
     float PlayerSizeX = 20.0f;
@@ -22,7 +22,7 @@ int main() {
     int WallPositionX = 40;
     int WallPositionY = 400;
     
-    InitWindow(ScreenWidth, screenheight, "Pathfinder");
+    InitWindow(ScreenWidth, Screenheight, "Pathfinder");
     SetTargetFPS(framerate);
 
     // stuff that happens every frame
